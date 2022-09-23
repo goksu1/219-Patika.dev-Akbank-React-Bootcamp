@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container mx-auto"></div>
+  <div class="grid grid-cols-3 gap-4">
+    <div class="personInformation">
+      <form class="w-full max-w-sm" id="form">
+        <div class="md:flex md:items-center mb-6">
+          <div class="md:w-1/3">
+            <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name">
+              Full Name
+            </label>
+          </div>
+          <div class="md:w-2/3">
+            <input
+              class="bg-gray-50 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-red-500"
+              id="addName" type="text" placeholder="Full Name">
+          </div>
+        </div>
+        <div class="md:flex md:items-center mb-6">
+          <div class="md:w-1/3">
+            <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-balance">
+              Balance
+            </label>
+          </div>
+          <div class="md:w-2/3">
+            <input
+              class="bg-gray-50 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-red-500"
+              id="balance" type="number" placeholder="Balance">
+          </div>
+        </div>
+        <div class="md:flex md:items-center">
+          <div class="md:w-1/3"></div>
+          <div class="md:w-2/3">
+            <button id="addBtn"
+              class="shadow bg-red-500 hover:bg-orange-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+              type="button">
+              Add
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="w-full max-w-sm md:w-2/3">
+      <div class="row container-fluid text-secondary">
+        <ul id="info">
+          <li class="flex justify-between">
+            <span class="mb-4 text-gray-500 font-bold md:text-left mb-1 md:mb-0">
+              Name
+            </span>
+            <span class="mb-4 text-gray-500 font-bold md:text-left mb-1 md:mb-0">
+              Balance
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="w-full max-w-sm md:w-2/3">
+      <label for="transfer" class="mb-4 block text-gray-500 font-bold md:text-left mb-1 md:mb-0 pr-4">Money
+        Transfer</label>
+
+      <select id="sender"
+        class="mb-4 bg-gray-50 border-2 border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-red-700 dark:border-red-600 dark:placeholder-red-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500">
+        <option>From</option>
+      </select>
+
+      <select id="recipient"
+        class="mb-4 bg-gray-50 border-2 border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-red-700 dark:border-red-600 dark:placeholder-red-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500">
+        <option>To</option>
+      </select>
+      <input
+        class="mb-4 bg-gray-50 appearance-none border-2 border-gray-200 rounded-lg w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-red-500"
+        id="inline-number" type="number" placeholder="Balance">
+      <button
+        class="shadow bg-red-500 hover:bg-orange-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+        type="button" id="sendMoney">
+        Send
+      </button>
+    </div>
+    <div class="w-full max-w-sm md:w-2/3">
+      <ul class="max-w-md divide-y divide-gray-200 dark:divide-gray-700 bg-gray-50 rounded-lg border-2 mt-2 py-2">
+        <li class="pb-4 sm:pb-4 pr-4 px-4">
+          <div class="flex items-center space-x-4">
+            <div class="flex-1 min-w-0">
+              <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                Product1
+              </p>
+              <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                67$
+              </p>
+            </div>
+            <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white ">
+              <button
+                class="shadow bg-red-500 hover:bg-orange-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-2 rounded"
+                type="button">
+                Add
+              </button>
+            </div>
+          </div>
+        <li class="pb-3 sm:pb-4 py-2 pr-4 px-4">
+          <div class="flex items-center space-x-4">
+            <div class="flex-1 min-w-0">
+              <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                Product2
+              </p>
+              <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                67$
+              </p>
+            </div>
+            <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+              <button
+                class="shadow bg-red-500 hover:bg-orange-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-2 rounded"
+                type="button">
+                Add
+              </button>
+            </div>
+          </div>
+        <li class="pb-3 sm:pb-4 py-2 pr-4 px-4">
+          <div class="flex items-center space-x-4">
+            <div class="flex-1 min-w-0">
+              <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                Product3
+              </p>
+              <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                67$
+              </p>
+            </div>
+            <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+              <button
+                class="shadow bg-red-500 hover:bg-orange-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-2 rounded"
+                type="button">
+                Add
+              </button>
+            </div>
+          </div>
+        <li class="pb-3 sm:pb-4 py-2 pr-4 px-4">
+          <div class="flex items-center space-x-4">
+            <div class="flex-1 min-w-0">
+              <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                Product4
+              </p>
+              <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                67$
+              </p>
+            </div>
+            <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+              <button
+                class="shadow bg-red-500 hover:bg-orange-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-2 rounded"
+                type="button">
+                Add
+              </button>
+            </div>
+          </div>
+        <li class="pb-3 sm:pb-4 py-2 pr-4 px-4">
+          <div class="flex items-center space-x-4">
+            <div class="flex-1 min-w-0">
+              <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                Product5
+              </p>
+              <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                67$
+              </p>
+            </div>
+            <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+              <button
+                class="shadow bg-red-500 hover:bg-orange-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-2 rounded"
+                type="button">
+                Add
+              </button>
+            </div>
+          </div>
+      </ul>
+    </div>
+    <div>
+      <div class="w-full max-w-sm md:w-2/3">
+        <label for="transfer" class="mb-4 block text-gray-500 font-bold md:text-left mb-1 md:mb-0 pr-4">Transaction History</label>
+        <select id="transfer"
+          class="mb-4 bg-gray-50 border-2 border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-red-700 dark:border-red-600 dark:placeholder-red-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500">
+          <option>Select a Customer</option>
+        </select>
+        <ul
+          class="items-center w-full text-sm font-medium text-gray-900 bg-white rounded-lg  sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+          <li class="w-full  border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+            <div class="flex items-center pl-3">
+              <input id="horizontal-list-radio-license" type="radio" value="" name="list-radio"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+              <label for="horizontal-list-radio-license"
+                class="py-3 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300">Received </label>
+            </div>
+          </li>
+          <li class="w-full  border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+            <div class="flex items-center pl-3">
+              <input id="horizontal-list-radio-id" type="radio" value="" name="list-radio"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+              <label for="horizontal-list-radio-id"
+                class="py-3 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300">Sent</label>
+            </div>
+          </li>
+          <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600"></li>
+          <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+            <button
+              class="shadow bg-red-500 hover:bg-orange-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+              type="button">
+              List
+            </button>
+            </li>
+          </div>
+
+        </ul>
+
+      </div>
+    </div>
+    <div>
+      <div class="w-full max-w-sm md:w-2/3">
+        <label for="transfer" class="mb-4 block text-gray-500 font-bold md:text-left mb-1 md:mb-0 pr-4">Basket Information</label>
+      </div>
+      <div>
+        <form class="w-full max-w-sm">
+          <div class="md:flex md:items-center mb-6">
+
+            <div class="md:w-2/3">
+              <select id="transfer"
+                class=" bg-gray-50 border-2 border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-red-700 dark:border-red-600 dark:placeholder-red-400 dark:text-white dark:focus:ring-red-500 dark:focus:border-red-500">
+                <option>Added Product</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="md:flex md:items-center">
+
+
+            <button
+              class="shadow bg-red-500 hover:bg-orange-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+              type="button">
+              Confirm
+            </button>
+          </div>
+      </div>
+      </form>
+
+
+    </div>
+  </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
